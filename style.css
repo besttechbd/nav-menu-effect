@@ -1,0 +1,203 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #34495e;
+}
+
+h1 {
+  text-align: center;
+  background-color: #f1c40f;
+  margin: 0;
+  padding: 20px;
+}
+
+nav#nav1, nav#nav2, nav#nav3 {
+  margin: 50px auto auto;
+  text-align: center;
+}
+
+nav#nav1 .title, nav#nav2 .title, nav#nav3 .title {
+  background-color: #ecf0f1;
+  color: black;
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav#nav1 .menu, nav#nav2 .menu, nav#nav3 .menu {
+  margin: 20px 0 0;
+  list-style-type: none;
+}
+
+nav#nav1 li, nav#nav2 li, nav#nav3 li {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+nav#nav1 li:hover span, nav#nav2 li:hover span, nav#nav3 li:hover span {
+  height: 100%;
+}
+
+nav#nav1 li:hover a, nav#nav2 li:hover a, nav#nav3 li:hover a {
+  color: white;
+}
+
+nav#nav1 li span, nav#nav2 li span, nav#nav3 li span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 0;
+  background-color: black;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  z-index: -1;
+}
+
+nav#nav1 li span:nth-child(2), nav#nav2 li span:nth-child(2), nav#nav3 li span:nth-child(2) {
+  left: 25%;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+nav#nav1 li span:nth-child(3), nav#nav2 li span:nth-child(3), nav#nav3 li span:nth-child(3) {
+  left: 50%;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+nav#nav1 li span:nth-child(4), nav#nav2 li span:nth-child(4), nav#nav3 li span:nth-child(4) {
+  left: 75%;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+nav#nav1 a, nav#nav2 a, nav#nav3 a {
+  color: white;
+  text-decoration: none;
+}
+
+/*This navigation 2 changes*/
+nav#nav2 li span {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+nav#nav2 li span:nth-child(2) {
+  left: 25%;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+nav#nav2 li span:nth-child(3) {
+  left: 50%;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+nav#nav2 li span:nth-child(4) {
+  left: 75%;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+/*This navigation 3 changes*/
+nav#nav3 li:hover span {
+  width: 100%;
+  height: 25%;
+}
+
+nav#nav3 li span {
+  left: 0;
+  width: 0;
+  height: 25%;
+}
+
+nav#nav3 li span:nth-child(2) {
+  top: 25%;
+  left: 0;
+}
+
+nav#nav3 li span:nth-child(3) {
+  top: 50%;
+  left: 0;
+}
+
+nav#nav3 li span:nth-child(4) {
+  top: 75%;
+  left: 0;
+}
+
+/*This navigation 4 changes*/
+nav#nav4 {
+  text-align: center;
+  margin: 50px auto 50px auto;
+}
+
+nav#nav4 .title {
+  background-color: #ecf0f1;
+  color: black;
+  display: inline-block;
+  margin: 0;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+nav#nav4 .menu {
+  list-style-type: none;
+}
+
+nav#nav4 li {
+  position: relative;
+  padding: 10px 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+nav#nav4 li:hover span {
+  width: 100%;
+}
+
+nav#nav4 li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav#nav4 li span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 25%;
+  background-color: black;
+  -webkit-transition: width 0.2s;
+  transition: width 0.2s;
+  z-index: -1;
+}
+
+nav#nav4 li span:nth-child(2) {
+  top: 25%;
+  right: 0;
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+nav#nav4 li span:nth-child(3) {
+  top: 50%;
+  right: 0;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+nav#nav4 li span:nth-child(4) {
+  top: 75%;
+  right: 0;
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+/*# sourceMappingURL=style.css.map */
